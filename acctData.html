@@ -1,0 +1,3920 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Class Search - Search Results</title>
+
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+	
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	<link rel="stylesheet" href="styles/pageTitles.css" type="text/css" />
+	
+	
+	<script type="text/javascript" src="script/scripts.js"></script>
+
+    <style>
+body {font:normal .85em Arial, Helvetica, sans-serif;}
+
+.subjDetail {width:700px;background-color:#eeeeee;border:1px solid #000000;margin-top:20px;padding:10px;}
+.showHide {text-decoration:underline;cursor:pointer;font-size:.85em;}
+
+</style>
+<script type="text/javascript">
+function showHideSubj(div) { 
+	var showHide = document.getElementById(div + "_showHide");
+	var details = document.getElementById(div + "_details");
+	
+	if (showHide.innerHTML == "Show Details") { 
+		showHide.innerHTML = "Hide Details";
+		details.style.display = "block";
+	} else { 
+		showHide.innerHTML = "Show Details";
+		details.style.display = "none";
+	} 	
+}
+</script>
+<link type="text/css" rel="stylesheet" href="header-footer/headerFooter2.css" /> <script type="text/javascript" src="header-footer/searchfield.js"></script> 
+</head>
+
+<body>
+
+
+<div id="header2">
+
+
+
+
+
+      <!-- BEGNIN CAMPUS LINKS -->
+  <div id="campus_links">
+  
+  
+  
+  <div id="campusLinksToHome">
+        <p>Campuses: </p>
+        <ul>
+          <li><a href="http://www.umn.edu" class='here'>Twin Cities</a></li>
+          <li><a href="http://www.crk.umn.edu" >Crookston</a></li>
+          <li><a href="http://www.d.umn.edu" >Duluth</a></li>
+          <li><a href="http://www.morris.umn.edu" >Morris</a></li>
+          <li><a href="http://www.r.umn.edu" >Rochester</a></li>
+          <li><a href="http://www.umn.edu/campuses.php">Other Locations</a></li>
+        </ul>
+        </div>
+  </div>
+      <!-- END CAMPUS LINKS -->
+      
+      
+      <!-- * BEGIN UofM HEADER (MAROON BAR)* -->
+<div id="headerUofM">
+        
+        <div id="logo_UMNTC">
+        	<a href="http://www.umn.edu">Go to the U of M Twin Cities home page</a>
+        </div>
+        
+        
+        <!--BEGIN search div-->
+        <div id="search_area">
+          <div id="search_nav">
+          
+          <a href="http://onestop.umn.edu" id="btn_onestop"><span>OneStop</span></a> 
+          
+          <a href="https://www.myu.umn.edu/" id="btn_myu_myU"><span>myU</span></a>
+          
+          </div>
+         
+
+         
+          <div class="search"> 
+               <form action="https://google.umn.edu/search" method="get" name="gsearch" id="gsearch" title="Search U of M Web sites" >
+               
+            		
+
+                    <input type="hidden" name="client" value="searchumn" />
+                    <input type="hidden" name="proxystylesheet" value="searchumn" />
+                    <input type="hidden" name="output" value="xml_no_dtd" />
+
+               
+               
+               
+               <label for="search_field">Search U of M Web sites</label>
+
+               <input type="text" id="search_field" name="q" value="Search U of M Web sites"  title="Search text"  />   
+                 <input class="search_btn" id="search_btn" type="image" src="header-footer/img/search_button.gif" alt="Submit Search" value="Search" />
+               
+               
+               </form> 
+          </div> 
+         
+         
+         
+          
+        </div><!-- end "search" area -->
+  </div><!-- end  Uof M header --> 
+</div><!-- end of header -->
+
+<!-- **************************** START OF ONESTOP BANNER ************************************* -->
+<div id="oneStopBanner2">
+	<div id="oneStopBanner2_inner"><h1>Class Search</h1>
+	<span class="appSubName">- Search Results</span> 
+    </div>
+    </div>
+<!-- ******************************* END OF ONESTOP BANNER ***************************** -->
+
+
+
+  
+
+
+<!-- ****************************** START RETURN AND COURSE INFO BUTTONS **************************** -->
+<div id="courseInfoPageLink">  <a href="http://onestop.umn.edu/onestop/registration.html">Course Information Page</a></div>
+<div id="returnButton">
+	 <a href="enterSearchCriteria.do?campus=UMNTC&term=1129" >&lt; Back </a>
+
+</div>
+<!-- ****************************** END RETURN AND COURSE INFO BUTTONS **************************** -->
+
+
+
+
+<form name="searchResultsForm" action="viewSearchResults.do?campus=UMNTC" method="GET">
+
+<div class="courseSearchMainBlock">
+
+
+
+
+<h1 class="searchResultsTitle">Search Results</h1>
+<div class="searchButtons borderBottom"> <input type="button" name="return" value="Return to Search Criteria"
+               onClick="window.location='enterSearchCriteria.do?campus=UMNTC&term=1129'" />
+        <input type="button" name="webregistration"  value="Open Web Registration"
+               onClick="window.location='https://www.umn.edu/login?autocontinue=1&desturl=https%3A%2F%2Fonestop2.umn.edu%2Fregistration%2FinitializeCurrentEnrollment.do%3Finstitution%3DUMNTC%26resetInstitution%3DY'" />
+        <input type="button" name="worksheet"  value="Registration Worksheet"
+               onClick="window.open('registrationworksheet.jsp','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')" />
+</div>
+
+<div ><h2 class="searchCriteraLabel">Search Criteria -</h2>
+<table class="searchCriteria">
+<tr>
+
+    <td class="tableLabel">Term:</td>
+    <td>Fall 2012</td>
+
+</tr>
+<tr>
+
+    <td class="tableLabel">Subject:</td>
+    <td>
+        
+        Accounting - ACCT
+        
+    </td>
+</tr>
+
+
+
+
+
+    <tr><td class="tableLabel" valign="top">Course Delivery:</td>
+        <td>
+
+            Classroom or partially online <br/>
+ 
+
+            Primarily online with some classroom<br/>
+
+
+        Completely online or distance
+
+        </td>    
+    </tr>
+    
+
+
+
+
+
+
+<tr>
+
+    <td class="tableLabel">Sections:</td>
+    
+    <td>Open
+        sections only</td>
+</tr>
+
+
+
+<tr>
+
+    <td class="tableLabel">Days:</td>
+    <td>M, Tu, W, Th, F, Sa, Su</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+</div>
+
+
+<h2 class="searchResults borderBoth">  
+        38 Results Found
+        
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<h3 style="text-align:center;">Accounting - ACCT <span id="ACCT_showHide" class="showHide" onclick="showHideSubj('ACCT');">Show Details</span></h3> 
+<div id="ACCT_details" style="display:none;width:650px;margin-left:15px" class="subjDetail">
+
+
+3-122 Carlson School of Management, 321 19th Ave S, West Bank Campus, Minneapolis, MN 55455 <br />
+
+
+612/624-6506 <br />
+ 
+
+<a href="http://www.csom.umn.edu">http://www.csom.umn.edu</a> <br />
+
+
+Curtis L. Carlson School of Management
+
+<p />
+
+Non-Carlson students should refer to <a href="http://onestop.umn.edu/registration/prepare/prerequisites_and_conflicts/carlson_instructions.html">Registration Instructions for Carlson School of Management Courses</a>, before attempting to register in the 3000-, 4000-, and 5000-level courses listed below.
+
+</div>	
+<hr />
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="1"></a>ACCT&nbsp;2050&nbsp;Introduction to Financial Reporting</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT2050" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|Accounting#ACCT2050','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT2050" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT2050&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT2050" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT2050','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT2050" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT2050','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F; Credit will not be granted if credit has been received for: APEC 1251; prereq Soph)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=19319&addNowSubject=ACCT&addNowCatNbr=2050&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">19319</td>
+<td class="description">-001
+    
+    LEC
+    
+    
+    ,&nbsp;08:00 A.M. - 09:40 A.M.
+    
+    
+    
+    ,&nbsp;M,W
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/HMH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">HMH
+    
+    &nbsp;1-108
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=calle001">Caliendo,Charles Michael</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+,&nbsp;CSOM Students Only
+
+
+
+
+
+
+
+,&nbsp;<a href="#ACCT2050"
+         onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT&amp;showDetail=Y#ACCT2050','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+    <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+              height="25"  /></a>
+&nbsp;100 seat(s)
+reserved for CSOM student&nbsp;
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;34&nbsp;of&nbsp;100&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=13925&addNowSubject=ACCT&addNowCatNbr=2050&addNowSection=005&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">13925</td>
+<td class="description">-005
+    
+    LEC
+    
+    
+    ,&nbsp;10:10 A.M. - 11:50 A.M.
+    
+    
+    
+    ,&nbsp;Tu,Th
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/HMH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">HMH
+    
+    &nbsp;1-108
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=fangw">Fang,Wei</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+,&nbsp;CSOM Students Only
+
+
+
+
+
+
+
+,&nbsp;<a href="#ACCT2050"
+         onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT&amp;showDetail=Y#ACCT2050','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+    <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+              height="25"  /></a>
+&nbsp;100 seat(s)
+reserved for CSOM student&nbsp;
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;1&nbsp;of&nbsp;100&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=15242&addNowSubject=ACCT&addNowCatNbr=2050&addNowSection=007&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">15242</td>
+<td class="description">-007
+    
+    LEC
+    
+    
+    ,&nbsp;02:30 P.M. - 04:10 P.M.
+    
+    
+    
+    ,&nbsp;Tu,Th
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/HMH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">HMH
+    
+    &nbsp;1-108
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=fangw">Fang,Wei</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+,&nbsp;CSOM Students Only
+
+
+
+
+
+
+
+,&nbsp;<a href="#ACCT2050"
+         onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT&amp;showDetail=Y#ACCT2050','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+    <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+              height="25"  /></a>
+&nbsp;100 seat(s)
+reserved for CSOM student&nbsp;
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;14&nbsp;of&nbsp;100&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=23218&addNowSubject=ACCT&addNowCatNbr=2050&addNowSection=009&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">23218</td>
+<td class="description">-009
+    
+    LEC
+    
+    
+    ,&nbsp;02:30 P.M. - 04:10 P.M.
+    
+    
+    
+    ,&nbsp;M,W
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/HMH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">HMH
+    
+    &nbsp;1-106
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=gaoxx112">Gao,Yu</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+,&nbsp;non-CSOM Students Only
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;18&nbsp;of&nbsp;120&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=13927&addNowSubject=ACCT&addNowCatNbr=2050&addNowSection=020&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">13927</td>
+<td class="description">-020
+    
+    LEC
+    
+    
+    ,&nbsp;05:45 P.M. - 09:05 P.M.
+    
+    
+    
+    ,&nbsp;W
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;L-110
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=zygu">Gu,Zhaoyang</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+,&nbsp;Non-CSOM Students Only
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;66&nbsp;of&nbsp;120&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=26209&addNowSubject=ACCT&addNowCatNbr=2050&addNowSection=B03&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">26209</td>
+<td class="description">-B03
+    
+    LEC
+    
+    
+    
+    
+    
+    (09/15/2012 - 06/15/2013)
+    
+    
+    
+
+
+                        ,&nbsp;CCE-ODL
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=biond001">Biondich,Nick E</a>
+
+
+
+
+
+
+
+,&nbsp;instruction mode:&nbsp;Extended Trm Dist Educ Telecom
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+,&nbsp;This extended-term course is not eligible for most types of financial aid.   Students admitted to School of Management majors may not take the ODL version of Acct 2050.  Acct 2050 is challenging, and taking it through ODL requires strong self-discipline.  Less help will be available than in the classroom, and you must structure your studies by yourself.  .
+
+
+
+&nbsp;<span class="bold">&nbsp;-&nbsp;Completely Online</span>
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;95&nbsp;of&nbsp;99&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=26210&addNowSubject=ACCT&addNowCatNbr=2050&addNowSection=C03&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">26210</td>
+<td class="description">-C03
+    
+    LEC
+    
+    
+    
+    
+    
+    (10/15/2012 - 07/15/2013)
+    
+    
+    
+
+
+                        ,&nbsp;CCE-ODL
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=biond001">Biondich,Nick E</a>
+
+
+
+
+
+
+
+,&nbsp;instruction mode:&nbsp;Extended Trm Dist Educ Telecom
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+,&nbsp;This extended-term course is not eligible for most types of financial aid.  Students admitted to School of Management majors may not take the ODL version of Acct 2050.  Acct 2050 is challenging, and taking it through ODL requires strong self-discipline.  Less help will be available than in the classroom, and you must structure your studies by yourself.
+
+
+
+&nbsp;<span class="bold">&nbsp;-&nbsp;Completely Online</span>
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;99&nbsp;of&nbsp;99&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=26211&addNowSubject=ACCT&addNowCatNbr=2050&addNowSection=D03&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">26211</td>
+<td class="description">-D03
+    
+    LEC
+    
+    
+    
+    
+    
+    (11/15/2012 - 08/15/2013)
+    
+    
+    
+
+
+                        ,&nbsp;CCE-ODL
+
+
+
+
+
+
+
+
+
+,&nbsp;instruction mode:&nbsp;Extended Trm Dist Educ Telecom
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+,&nbsp;This extended-term course is not eligible for most types of financial aid.  Students admitted to School of Management majors may not take the ODL version of Acct 2050.  Acct 2050 is challenging, and taking it through ODL requires strong self-discipline.  Less help will be available than in the classroom, and you must structure your studies by yourself.
+
+
+
+&nbsp;<span class="bold">&nbsp;-&nbsp;Completely Online</span>
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;99&nbsp;of&nbsp;99&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=19077&addNowSubject=ACCT&addNowCatNbr=2050&addNowSection=E03&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">19077</td>
+<td class="description">-E03
+    
+    LEC
+    
+    
+    
+    
+    
+    (12/15/2012 - 09/15/2013)
+    
+    
+    
+
+
+                        ,&nbsp;CCE-ODL
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=biond001">Biondich,Nick E</a>
+
+
+
+
+
+
+
+,&nbsp;instruction mode:&nbsp;Extended Trm Dist Educ Telecom
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+,&nbsp;This extended-term course is not eligible for most types of financial aid.  Students admitted to School of Management majors may not take the ODL version of Acct 2050.  Acct 2050 is challenging, and taking it through ODL requires strong self-discipline.  Less help will be available than in the classroom, and you must structure your studies by yourself.  11/30 is the last day to register.  No permissions/late registration, no exceptions.
+
+
+
+&nbsp;<span class="bold">&nbsp;-&nbsp;Completely Online</span>
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;99&nbsp;of&nbsp;99&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="colorCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="coloredtablerow">-->
+    <h3 class="courseTitle"><a name="2"></a>ACCT&nbsp;2050H&nbsp;Honors: Introduction to Financial Reporting</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT2050H" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT2050H','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT2050H" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT2050H&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT2050H" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT2050H','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT2050H" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT2050H','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F; meets Honors req of Honors)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=20774&addNowSubject=ACCT&addNowCatNbr=2050H&addNowSection=040&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">20774</td>
+<td class="description">-040
+    
+    LEC
+    
+    
+    ,&nbsp;10:10 A.M. - 11:50 A.M.
+    
+    
+    
+    ,&nbsp;M,W
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#2" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/HMH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">HMH
+    
+    &nbsp;1-109
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=white131">White,Paul Andrew</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;24&nbsp;of&nbsp;48&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="3"></a>ACCT&nbsp;3001&nbsp;Introduction to Management Accounting</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT3001" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT3001','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT3001" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT3001&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT3001" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT3001','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT3001" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT3001','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F; prereq 2050)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=13221&addNowSubject=ACCT&addNowCatNbr=3001&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">13221</td>
+<td class="description">-001
+    
+    LEC
+    
+    
+    ,&nbsp;02:30 P.M. - 03:45 P.M.
+    
+    
+    
+    ,&nbsp;M,W
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#3" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/HMH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">HMH
+    
+    &nbsp;1-104
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=khanm">Khan,Mozaffar</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;3 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;2&nbsp;of&nbsp;110&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=13222&addNowSubject=ACCT&addNowCatNbr=3001&addNowSection=002&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">13222</td>
+<td class="description">-002
+    
+    LEC
+    
+    
+    ,&nbsp;04:00 P.M. - 05:15 P.M.
+    
+    
+    
+    ,&nbsp;M,W
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#3" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/HMH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">HMH
+    
+    &nbsp;1-104
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=khanm">Khan,Mozaffar</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;3 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;29&nbsp;of&nbsp;120&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=13223&addNowSubject=ACCT&addNowCatNbr=3001&addNowSection=020&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">13223</td>
+<td class="description">-020
+    
+    LEC
+    
+    
+    ,&nbsp;05:45 P.M. - 08:15 P.M.
+    
+    
+    
+    ,&nbsp;Tu
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#3" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/HMH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">HMH
+    
+    &nbsp;1-106
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=khanm">Khan,Mozaffar</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;3 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;46&nbsp;of&nbsp;120&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="colorCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="coloredtablerow">-->
+    <h3 class="courseTitle"><a name="4"></a>ACCT&nbsp;3150&nbsp;Role of the Accountant in Today's Finance Function</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT3150" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT3150','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT3150" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT3150&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT3150" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT3150','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT3150" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT3150','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (S-N only; prereq 2050, [accounting major or accounting certificate student])</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=33910&addNowSubject=ACCT&addNowCatNbr=3150&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">33910</td>
+<td class="description">-001
+    
+    LEC
+    
+    
+    ,&nbsp;11:50 A.M. - 01:30 P.M.
+    
+    
+    
+    ,&nbsp;M
+    
+    
+    (09/04/2012 - 10/22/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#4" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;1-143
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=batin006">Batina,Tom</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;1 credit
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;36&nbsp;of&nbsp;48&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="5"></a>ACCT&nbsp;3199&nbsp;Internship in Public Accounting</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT3199" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT3199','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT3199" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT3199&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT3199" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT3199','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT3199" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT3199','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (S-N; prereq 5125, instr consent)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=13789&addNowSubject=ACCT&addNowCatNbr=3199&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">13789</td>
+<td class="description">-001
+    
+    IEX
+    
+    
+    
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=biond001">Biondich,Nick E</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;2 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;6&nbsp;of&nbsp;20&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="colorCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="coloredtablerow">-->
+    <h3 class="courseTitle"><a name="6"></a>ACCT&nbsp;3201&nbsp;Intermediate Management Accounting</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT3201" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT3201','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT3201" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT3201&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT3201" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT3201','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT3201" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT3201','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F; prereq 3001, acct or finance major)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=26334&addNowSubject=ACCT&addNowCatNbr=3201&addNowSection=002&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">26334</td>
+<td class="description">-002
+    
+    LEC
+    
+    
+    ,&nbsp;11:50 A.M. - 01:30 P.M.
+    
+    
+    
+    ,&nbsp;Tu,Th
+    
+    
+    (10/23/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#6" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;2-215
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=white131">White,Paul Andrew</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;2 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;40&nbsp;of&nbsp;65&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="7"></a>ACCT&nbsp;3299&nbsp;Internship in Management Accounting</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT3299" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT3299','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT3299" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT3299&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT3299" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT3299','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT3299" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT3299','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (S-N; prereq Acct 3201, instr consent)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=13790&addNowSubject=ACCT&addNowCatNbr=3299&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">13790</td>
+<td class="description">-001
+    
+    IEX
+    
+    
+    
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=biond001">Biondich,Nick E</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;2 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;17&nbsp;of&nbsp;20&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="colorCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="coloredtablerow">-->
+    <h3 class="courseTitle"><a name="8"></a>ACCT&nbsp;5101&nbsp;Intermediate Accounting I</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT5101" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT5101','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT5101" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT5101&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT5101" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5101','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT5101" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5101','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F; prereq Grade of at least B- in 2050, [mgmt major or mgmt grad student])</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=13365&addNowSubject=ACCT&addNowCatNbr=5101&addNowSection=002&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">13365</td>
+<td class="description">-002
+    
+    LEC
+    
+    
+    ,&nbsp;01:45 P.M. - 03:25 P.M.
+    
+    
+    
+    ,&nbsp;M,W
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#8" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;L-126
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=gduke">Duke,Gordon Leon</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;15&nbsp;of&nbsp;48&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=21856&addNowSubject=ACCT&addNowCatNbr=5101&addNowSection=003&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">21856</td>
+<td class="description">-003
+    
+    LEC
+    
+    
+    ,&nbsp;03:45 P.M. - 05:25 P.M.
+    
+    
+    
+    ,&nbsp;M,W
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#8" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;L-122
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=biond001">Biondich,Nick E</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;1&nbsp;of&nbsp;44&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=21857&addNowSubject=ACCT&addNowCatNbr=5101&addNowSection=004&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">21857</td>
+<td class="description">-004
+    
+    LEC
+    
+    
+    ,&nbsp;09:55 A.M. - 11:35 A.M.
+    
+    
+    
+    ,&nbsp;Tu,Th
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#8" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;L-122
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=dvyas">Vyas,Dushyantkumar Maheshkumar</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;26&nbsp;of&nbsp;48&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=23030&addNowSubject=ACCT&addNowCatNbr=5101&addNowSection=005&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">23030</td>
+<td class="description">-005
+    
+    LEC
+    
+    
+    ,&nbsp;03:45 P.M. - 05:25 P.M.
+    
+    
+    
+    ,&nbsp;Tu,Th
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#8" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;L-122
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=dvyas">Vyas,Dushyantkumar Maheshkumar</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;22&nbsp;of&nbsp;48&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=17035&addNowSubject=ACCT&addNowCatNbr=5101&addNowSection=020&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">17035</td>
+<td class="description">-020
+    
+    LEC
+    
+    
+    ,&nbsp;05:45 P.M. - 09:05 P.M.
+    
+    
+    
+    ,&nbsp;Tu
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#8" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;L-126
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=gduke">Duke,Gordon Leon</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;30&nbsp;of&nbsp;48&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="9"></a>ACCT&nbsp;5125&nbsp;Auditing Principles and Procedures</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT5125" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT5125','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT5125" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT5125&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT5125" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5125','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT5125" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5125','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F; prereq [3101 or 5101 or 5100 or 6100], [acct major or grad mgmt student])</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=13367&addNowSubject=ACCT&addNowCatNbr=5125&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">13367</td>
+<td class="description">-001
+    
+    LEC
+    
+    
+    ,&nbsp;09:55 A.M. - 11:35 A.M.
+    
+    
+    
+    ,&nbsp;M,W
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#9" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/HMH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">HMH
+    
+    &nbsp;1-107
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=beilx002">Beil,Frank J</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;4&nbsp;of&nbsp;65&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=13368&addNowSubject=ACCT&addNowCatNbr=5125&addNowSection=020&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">13368</td>
+<td class="description">-020
+    
+    LEC
+    
+    
+    ,&nbsp;05:45 P.M. - 09:05 P.M.
+    
+    
+    
+    ,&nbsp;Tu
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#9" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;1-147
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=batin006">Batina,Tom</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+,&nbsp;<a href="#ACCT5125"
+         onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT&amp;showDetail=Y#ACCT5125','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+    <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+              height="25"  /></a>
+&nbsp;5 seat(s)
+reserved for PTMBA student&nbsp;
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;29&nbsp;of&nbsp;65&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="colorCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="coloredtablerow">-->
+    <h3 class="courseTitle"><a name="10"></a>ACCT&nbsp;5135&nbsp;Fundamentals of Federal Income Tax</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT5135" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT5135','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT5135" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT5135&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT5135" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5135','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT5135" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5135','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F; prereq [2050 or MBA 6030], [mgmt or grad mgmt student])</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=13370&addNowSubject=ACCT&addNowCatNbr=5135&addNowSection=020&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">13370</td>
+<td class="description">-020
+    
+    LEC
+    
+    
+    ,&nbsp;05:45 P.M. - 09:05 P.M.
+    
+    
+    
+    ,&nbsp;Th
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#10" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;2-213
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=pgutterm">Gutterman,Paul Gerard</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+,&nbsp;<a href="#ACCT5135"
+         onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT&amp;showDetail=Y#ACCT5135','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+    <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+              height="25"  /></a>
+&nbsp;5 seat(s)
+reserved for PTMBA student; 3 seat(s)
+reserved for MBT student; 12 seat(s)
+reserved for Accountancy M.Acc.&nbsp;
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;23&nbsp;of&nbsp;65&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="11"></a>ACCT&nbsp;5160&nbsp;Financial Statement Analysis</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT5160" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT5160','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT5160" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT5160&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT5160" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5160','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT5160" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5160','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F; prereq [5100/6100 or 3101/5101],  [accounting or finance major])</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=20185&addNowSubject=ACCT&addNowCatNbr=5160&addNowSection=020&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">20185</td>
+<td class="description">-020
+    
+    LEC
+    
+    
+    ,&nbsp;05:45 P.M. - 09:05 P.M.
+    
+    
+    
+    ,&nbsp;Th
+    
+    
+    (09/04/2012 - 10/22/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#11" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;L-122
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=gduke">Duke,Gordon Leon</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;2 credits
+
+
+
+
+
+
+
+
+,&nbsp;<a href="#ACCT5160"
+         onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT&amp;showDetail=Y#ACCT5160','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+    <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+              height="25"  /></a>
+&nbsp;5 seat(s)
+reserved for Accountancy M.Acc.&nbsp;
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;6&nbsp;of&nbsp;48&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="colorCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="coloredtablerow">-->
+    <h3 class="courseTitle"><a name="12"></a>ACCT&nbsp;5236&nbsp;Introduction to Taxation of Business</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT5236" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT5236','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT5236" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT5236&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT5236" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5236','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT5236" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5236','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F; prereq 5135, acct major)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=18282&addNowSubject=ACCT&addNowCatNbr=5236&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">18282</td>
+<td class="description">-001
+    
+    LEC
+    
+    
+    ,&nbsp;03:45 P.M. - 05:25 P.M.
+    
+    
+    
+    ,&nbsp;M,W
+    
+    
+    (10/23/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#12" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;L-126
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=conlo031">Conlon,Roger John</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;2 credits
+
+
+
+
+
+
+
+
+,&nbsp;<a href="#ACCT5236"
+         onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT&amp;showDetail=Y#ACCT5236','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+    <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+              height="25"  /></a>
+&nbsp;10 seat(s)
+reserved for Accountancy M.Acc.&nbsp;
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;5&nbsp;of&nbsp;48&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="13"></a>ACCT&nbsp;5310&nbsp;International Accounting</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT5310" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT5310','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT5310" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT5310&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT5310" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5310','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT5310" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5310','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F; prereq 5101; [5102 or Concurrent registration is required (or allowed) in 5102] recommended)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=22112&addNowSubject=ACCT&addNowCatNbr=5310&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">22112</td>
+<td class="description">-001
+    
+    LEC
+    
+    
+    ,&nbsp;01:45 P.M. - 03:25 P.M.
+    
+    
+    
+    ,&nbsp;M,W
+    
+    
+    (10/23/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#13" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;L-114
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=jrayburn">Rayburn,Judy Ann</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;2 credits
+
+
+,&nbsp;Equivalent to ACCT 8007 formerly offered in MAcc.
+
+
+
+
+
+
+
+,&nbsp;<a href="#ACCT5310"
+         onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT&amp;showDetail=Y#ACCT5310','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+    <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+              height="25"  /></a>
+&nbsp;7 seat(s)
+reserved for Accountancy M.Acc.&nbsp;
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;4&nbsp;of&nbsp;63&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="colorCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="coloredtablerow">-->
+    <h3 class="courseTitle"><a name="14"></a>ACCT&nbsp;5420&nbsp;MAcc directed study</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT5420" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT5420','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT5420" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT5420&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT5420" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5420','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT5420" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT5420','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F; prereq MAcc student)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=21859&addNowSubject=ACCT&addNowCatNbr=5420&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">21859</td>
+<td class="description">-001
+    
+    DST
+    
+    
+    
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;1 - 4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;50&nbsp;of&nbsp;50&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="15"></a>ACCT&nbsp;6100&nbsp;Financial Statement Analysis</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT6100" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT6100','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT6100" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT6100&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT6100" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT6100','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT6100" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT6100','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F only; prereq MBA 6030, MBA student)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=21858&addNowSubject=ACCT&addNowCatNbr=6100&addNowSection=060&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">21858</td>
+<td class="description">-060
+    
+    LEC
+    
+    
+    ,&nbsp;05:45 P.M. - 09:05 P.M.
+    
+    
+    
+    ,&nbsp;Tu
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#15" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/HMH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">HMH
+    
+    &nbsp;1-105
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=beilx002">Beil,Frank J</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+,&nbsp;<a href="#ACCT6100"
+         onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT&amp;showDetail=Y#ACCT6100','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+    <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+              height="25"  /></a>
+&nbsp;60 seat(s)
+reserved for PTMBA student; 5 seat(s)
+reserved for MBA day student&nbsp;
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;43&nbsp;of&nbsp;65&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="colorCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="coloredtablerow">-->
+    <h3 class="courseTitle"><a name="16"></a>ACCT&nbsp;6101&nbsp;Financial Accounting II</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT6101" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT6101','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT6101" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT6101&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT6101" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT6101','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT6101" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT6101','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=33908&addNowSubject=ACCT&addNowCatNbr=6101&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">33908</td>
+<td class="description">-001
+    
+    LEC
+    
+    
+    ,&nbsp;01:45 P.M. - 03:25 P.M.
+    
+    
+    
+    ,&nbsp;Tu,Th
+    
+    
+    (09/04/2012 - 10/22/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#16" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;1-136
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=shrof003">Shroff,Pervin Keki</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;2 credits
+
+
+
+
+
+
+
+
+,&nbsp;<a href="#ACCT6101"
+         onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT&amp;showDetail=Y#ACCT6101','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+    <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+              height="25"  /></a>
+&nbsp;48 seat(s)
+reserved for MBA day student&nbsp;
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;29&nbsp;of&nbsp;48&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="17"></a>ACCT&nbsp;6160&nbsp;Accounting for Mergers and Acquisitions, and Derivatives</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT6160" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT6160','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT6160" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT6160&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT6160" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT6160','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT6160" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT6160','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F only; prereq MBA 6030, MBA student)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=18284&addNowSubject=ACCT&addNowCatNbr=6160&addNowSection=060&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">18284</td>
+<td class="description">-060
+    
+    LEC
+    
+    
+    ,&nbsp;05:45 P.M. - 09:05 P.M.
+    
+    
+    
+    ,&nbsp;M
+    
+    
+    (09/04/2012 - 10/22/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#17" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/HMH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">HMH
+    
+    &nbsp;1-106
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=beilx002">Beil,Frank J</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;2 credits
+
+
+
+
+
+
+
+
+,&nbsp;<a href="#ACCT6160"
+         onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT&amp;showDetail=Y#ACCT6160','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+    <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+              height="25"  /></a>
+&nbsp;60 seat(s)
+reserved for PTMBA student; 5 seat(s)
+reserved for MBA day student&nbsp;
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;39&nbsp;of&nbsp;65&nbsp;seats&nbsp;open</span>
+
+											<span class="green">&nbsp;&nbsp;Waitlist becomes available when class fills.</span>
+				
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="colorCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="coloredtablerow">-->
+    <h3 class="courseTitle"><a name="18"></a>ACCT&nbsp;8001&nbsp;Internal Control</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT8001" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT8001','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT8001" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT8001&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT8001" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8001','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT8001" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8001','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F only; prereq MAcc grad major)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=19613&addNowSubject=ACCT&addNowCatNbr=8001&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">19613</td>
+<td class="description">-001
+    
+    LEC
+    
+    
+    ,&nbsp;05:45 P.M. - 09:05 P.M.
+    
+    
+    
+    ,&nbsp;W
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#18" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;L-122
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=kalli008">Kallio,Larry Rodger</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;18&nbsp;of&nbsp;46&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="19"></a>ACCT&nbsp;8002&nbsp;Securities and Exchange Commission (SEC) and Standard Setting</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT8002" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT8002','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT8002" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT8002&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT8002" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8002','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT8002" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8002','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (A-F only; prereq MAcc grad major)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=21117&addNowSubject=ACCT&addNowCatNbr=8002&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">21117</td>
+<td class="description">-001
+    
+    LEC
+    
+    
+    ,&nbsp;05:45 P.M. - 09:05 P.M.
+    
+    
+    
+    ,&nbsp;Tu
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#19" onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/CarlSMgmt/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">CarlSMgmt
+    
+    &nbsp;L-122
+    
+    
+    </a>
+
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=kalli008">Kallio,Larry Rodger</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;22&nbsp;of&nbsp;46&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="colorCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="coloredtablerow">-->
+    <h3 class="courseTitle"><a name="20"></a>ACCT&nbsp;8802&nbsp;Empirical Research-Capital Markets</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT8802" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT8802','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT8802" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT8802&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT8802" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8802','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT8802" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8802','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (max crs 8; 2 completions allowed; prereq Business admin PhD student or instr consent )</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=33379&addNowSubject=ACCT&addNowCatNbr=8802&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">33379</td>
+<td class="description">-001
+    
+    SEM
+    
+    
+    
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=zygu">Gu,Zhaoyang</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;14&nbsp;of&nbsp;15&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="21"></a>ACCT&nbsp;8812&nbsp;Information Economics II</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT8812" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT8812','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT8812" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT8812&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT8812" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8812','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT8812" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8812','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (prereq Business admin PhD student or instr consent)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=33909&addNowSubject=ACCT&addNowCatNbr=8812&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">33909</td>
+<td class="description">-001
+    
+    SEM
+    
+    
+    
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=ckanodia">Kanodia,Chandra S</a>
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;4 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;14&nbsp;of&nbsp;15&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="colorCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="coloredtablerow">-->
+    <h3 class="courseTitle"><a name="22"></a>ACCT&nbsp;8892&nbsp;Readings in Accounting</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT8892" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT8892','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT8892" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT8892&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT8892" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8892','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT8892" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8892','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (max crs 16; 16 completions allowed; prereq Business admin PhD student or instr consent)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=14262&addNowSubject=ACCT&addNowCatNbr=8892&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNowAlt.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">14262</td>
+<td class="description">-001
+    
+    DRD
+    
+    
+    
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;1 - 8 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;10&nbsp;of&nbsp;10&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+	
+
+			<div  class="whiteCourseBlock">
+
+
+			 <!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+    <h3 class="courseTitle"><a name="23"></a>ACCT&nbsp;8894&nbsp;Research in Accounting</h3>
+
+
+					<div class="courseInfoLinks">
+                     
+                     
+                        
+                     <a href="#ACCT8894" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT|null#ACCT8894','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#ACCT8894" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=ACCT8894&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#ACCT8894" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8894','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#ACCT8894" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=ACCT#ACCT8894','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+			  </div>
+
+
+                     
+                    <p> (max crs 16; 16 completions allowed; prereq Business admin PhD student or instr consent)</p>
+                     
+
+					  <!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+      <table class="sectionTable">
+
+
+
+<tr >
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=11493&addNowSubject=ACCT&addNowCatNbr=8894&addNowSection=001&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DACCT%7CAccounting+-+ACCT%26searchCatalogNumber%3D%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dtrue%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26campus%3DUMNTC%26search%3DSearch';return  false;"> <img src="images/addNow.gif" alt="Click to register for this class"
+                                                    border="0" align="left" /></a>
+    </td>
+<td class="classNumber">11493</td>
+<td class="description">-001
+    
+    DRS
+    
+    
+    
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+
+
+                        ,&nbsp;TCWESTBANK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,&nbsp;1 - 8 credits
+
+
+
+
+
+
+
+
+
+
+
+<br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px" alt="Seats Open"  />&nbsp;&nbsp;20&nbsp;of&nbsp;20&nbsp;seats&nbsp;open</span>
+
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="searchButtons borderTop">
+<input type="button" name="return"  value="Return to Search Criteria"
+               onClick="window.location='enterSearchCriteria.do?campus=UMNTC&term=1129'" />
+        <input type="button" name="webregistration"  value="Open Web Registration"
+               onClick="window.location='https://www.umn.edu/login?autocontinue=1&desturl=https%3A%2F%2Fonestop2.umn.edu%2Fregistration%2FinitializeCurrentEnrollment.do%3Finstitution%3DUMNTC%26resetInstitution%3DY'" />
+        <input type="button" name="worksheet"  value="Registration Worksheet"
+               onClick="window.open('registrationworksheet.jsp','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')" />
+
+</div>
+
+</div>
+</form>
+
+
+
+	
+
+<!-- ********************************************* START OF INSTITUTIONAL FOOTER ********************************* -->
+
+
+
+
+<div id="unit_footer">
+	<div id="unit_footer_inner">
+	
+    	<p>&nbsp;</p>
+    	 <ul>
+
+      <li><a href="http://onestop.umn.edu" target="_blank"><img src="header-footer/img/onestopfooterimg.gif" alt="" width="113" height="32"  style="border:1px solid #333"/></a></li>
+      <li style="position:relative; top:-12px"><a href="http://www.onestop.umn.edu/contact_us/index.html" target="_blank">Contact Us</a></li>
+
+    </ul>
+	
+    </div>
+
+</div>
+
+
+  
+  
+  <!-- * FOOTER * -->
+  
+<div id="footer">
+	<div id="footer_inner">
+		
+    
+    
+    <div class="footerLinks">
+       <p>Twin Cities Campus:</p>
+        <ul>
+        	
+			
+            
+            
+             	<li><a href="http://www1.umn.edu/pts/">Parking &amp; Transportation</a></li>
+            	<li><a href="http://www.umn.edu/twincities/maps/index.html">Maps &amp; Directions</a></li>
+            	<li><a href="http://www.directory.umn.edu/">Directories</a></li>
+            	<li><a href="http://www.umn.edu/twincities/contact/">Contact U of M</a></li>
+            
+            
+             
+             
+             
+            
+            
+            <li><a href="http://www.privacy.umn.edu">Privacy</a></li>
+        </ul>
+	</div>
+        
+        <p class="copyright">&copy; 2002 Regents of the University of Minnesota. All rights reserved.<br />
+    The University of Minnesota is an equal opportunity educator and employer<br />
+    Information current as of August 04, 2012</p>
+    
+        
+	</div><!-- end footer_inner -->
+</div><!-- end footer -->
+<!-- ***************************************** END OF INSTITUIONAL FOOTER **************************************** -->
+
+
+</body>
+</html>
