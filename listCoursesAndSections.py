@@ -9,6 +9,9 @@ class CourseParser(HTMLParser):
 		# must init HTMLParser with strict = false, or else bad tags will break parser
 		super().__init__(strict = False)
 
+		# courseList is a list of currCourseData items, one per course
+		self.courseList = []
+
 		# if insideCourseTitle is true, then the script is reading a course title
 		#     and should keep track of the data
 		# insideCourseTitle is true after <h3 class="courseTitle"> and before </h3>
@@ -20,8 +23,18 @@ class CourseParser(HTMLParser):
 		#     course number, course title] to end of courseList
 		self.currCourseData = []
 
-		# courseList is a list of currCourseData items, one per course
-		self.courseList = []
+		# sectionList is a list of sectionData items
+		self.sectionList = []
+
+		# if insideCourseData is true, then the script is inside course info and should
+		#     keep track of section data
+		# insideCourseData is 
+		self.insideCourseData = False
+
+		# sectionData holds information about individual course sections
+		# list is structured as [courseNum, seatsOpen, seatsTotal]
+		# if class is full, seatsOpen and seatsTotal will be -1
+		self.sectionData = []
 
 	def handle_starttag(self, tag, attrs):
 		for attr in attrs:
