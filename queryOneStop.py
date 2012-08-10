@@ -4,6 +4,7 @@
 import urllib2
 from HTMLParser import HTMLParser
 import sys
+import string
 
 if len(sys.argv) <= 1 or sys.argv[1] == "":
 	sys.exit("No course code provided. Please provide a course code such as BIOL or CSCI.\n" + 
@@ -133,6 +134,8 @@ def getCourseSearchURL(courseCat, courseNum = ""):
 		return webUrl
 	else:
 		raise ValueError("Course code not found: " + courseCat)
+
+argCourseCat = string.upper(argCourseCat)
 
 try:
 	searchUrl = getCourseSearchURL(argCourseCat, argCourseNum)
