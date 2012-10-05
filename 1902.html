@@ -1,0 +1,982 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Class Search - Search Results</title>
+
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+	
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	<link rel="stylesheet" href="styles/pageTitles.css" type="text/css" />
+	
+	
+	<script type="text/javascript" src="script/scripts.js"></script>
+
+    <style>
+        body {
+            font: normal .85em Arial, Helvetica, sans-serif;
+        }
+
+        .subjDetail {
+            width: 700px;
+            background-color: #eeeeee;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .showHide {
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: .85em;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function showHideSubj(div) {
+            var showHide = document.getElementById(div + "_showHide");
+            var details = document.getElementById(div + "_details");
+
+            if (showHide.innerHTML == "Show Details") {
+                showHide.innerHTML = "Hide Details";
+                details.style.display = "block";
+            } else {
+                showHide.innerHTML = "Show Details";
+                details.style.display = "none";
+            }
+        }
+    </script>
+    <link type="text/css" rel="stylesheet" href="header-footer/headerFooter2.css"/>
+    <script type="text/javascript" src="header-footer/searchfield.js"></script>
+    
+</head>
+
+<body>
+
+
+<div id="header2">
+
+
+
+
+
+      <!-- BEGNIN CAMPUS LINKS -->
+  <div id="campus_links">
+  
+  
+  
+  <div id="campusLinksToHome">
+        <p>Campuses: </p>
+        <ul>
+          <li><a href="http://www.umn.edu" class='here'>Twin Cities</a></li>
+          <li><a href="http://www.crk.umn.edu" >Crookston</a></li>
+          <li><a href="http://www.d.umn.edu" >Duluth</a></li>
+          <li><a href="http://www.morris.umn.edu" >Morris</a></li>
+          <li><a href="http://www.r.umn.edu" >Rochester</a></li>
+          <li><a href="http://www.umn.edu/campuses.php">Other Locations</a></li>
+        </ul>
+        </div>
+  </div>
+      <!-- END CAMPUS LINKS -->
+      
+      
+      <!-- * BEGIN UofM HEADER (MAROON BAR)* -->
+<div id="headerUofM">
+        
+        <div id="logo_UMNTC">
+        	<a href="http://www.umn.edu">Go to the U of M Twin Cities home page</a>
+        </div>
+        
+        
+        <!--BEGIN search div-->
+        <div id="search_area">
+          <div id="search_nav">
+          
+          <a href="http://onestop.umn.edu" id="btn_onestop"><span>OneStop</span></a> 
+          
+          <a href="https://www.myu.umn.edu/" id="btn_myu_myU"><span>myU</span></a>
+          
+          </div>
+         
+
+         
+          <div class="search"> 
+               <form action="https://google.umn.edu/search" method="get" name="gsearch" id="gsearch" title="Search U of M Web sites" >
+               
+            		
+
+                    <input type="hidden" name="client" value="searchumn" />
+                    <input type="hidden" name="proxystylesheet" value="searchumn" />
+                    <input type="hidden" name="output" value="xml_no_dtd" />
+
+               
+               
+               
+               <label for="search_field">Search U of M Web sites</label>
+
+               <input type="text" id="search_field" name="q" value="Search U of M Web sites"  title="Search text"  />   
+                 <input class="search_btn" id="search_btn" type="image" src="header-footer/img/search_button.gif" alt="Submit Search" value="Search" />
+               
+               
+               </form> 
+          </div> 
+         
+         
+         
+          
+        </div><!-- end "search" area -->
+  </div><!-- end  Uof M header --> 
+</div><!-- end of header -->
+
+<!-- **************************** START OF ONESTOP BANNER ************************************* -->
+<div id="oneStopBanner2">
+	<div id="oneStopBanner2_inner"><h1>Class Search</h1>
+	<span class="appSubName">- Search Results</span> 
+    </div>
+    </div>
+<!-- ******************************* END OF ONESTOP BANNER ***************************** -->
+
+
+
+
+
+
+<!-- ****************************** START RETURN AND COURSE INFO BUTTONS **************************** -->
+<div id="courseInfoPageLink"><a href="http://onestop.umn.edu/onestop/registration.html">Course Information Page
+</a></div>
+<div id="returnButton">
+    <a href="enterSearchCriteria.do?campus=UMNTC&term=1129">&lt; Back </a>
+
+</div>
+<!-- ****************************** END RETURN AND COURSE INFO BUTTONS **************************** -->
+
+
+<form name="searchResultsForm" action="viewSearchResults.do?campus=UMNTC" method="GET">
+
+<div class="courseSearchMainBlock">
+
+
+<h1 class="searchResultsTitle">Search Results</h1>
+
+<div class="searchButtons borderBottom"><input type="button" name="return" value="Return to Search Criteria"
+                                               onClick="window.location='enterSearchCriteria.do?campus=UMNTC&term=1129'"/>
+    <input type="button" name="webregistration" value="Open Web Registration"
+           onClick="window.location='https://www.umn.edu/login?autocontinue=1&desturl=https%3A%2F%2Fonestop2.umn.edu%2Fregistration%2FinitializeCurrentEnrollment.do%3Finstitution%3DUMNTC%26resetInstitution%3DY'"/>
+    <input type="button" name="worksheet" value="Registration Worksheet"
+           onClick="window.open('registrationworksheet.jsp','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')"/>
+</div>
+
+<div><h2 class="searchCriteraLabel">Search Criteria -</h2>
+<table class="searchCriteria">
+<tr>
+
+    <td class="tableLabel">Term:</td>
+    <td>Fall 2012
+    </td>
+
+</tr>
+<tr>
+
+    <td class="tableLabel">Subject:</td>
+    <td>
+        
+        Computer Science - CSCI
+        
+    </td>
+</tr>
+
+
+<tr>
+
+    <td class="tableLabel">Course Number:</td>
+    <td>1902
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="tableLabel" valign="top">Course Delivery:</td>
+    <td>
+        
+        Classroom or partially online <br/>
+        
+        
+        Primarily online with some classroom<br/>
+        
+        
+        Completely online or distance
+        
+    </td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+    <td class="tableLabel">Sections:</td>
+    <td>All
+        sections
+    </td>
+</tr>
+
+
+
+<tr>
+
+    <td class="tableLabel">Days:</td>
+    <td>M, Tu, W, Th, F, Sa, Su
+    </td>
+</tr>
+
+
+
+
+<tr>
+
+    <td class="tableLabel">&nbsp;Campus&nbsp;Areas:</td>
+    <td>East Bank, West Bank, St. Paul
+    </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+</table>
+
+</div>
+
+
+<h2 class="searchResults borderBoth">
+    7 Results Found
+    
+</h2>
+
+
+
+
+
+
+
+
+
+<hr/>
+<h3 style="text-align:center;">Computer Science - CSCI <span id="CSCI_showHide" class="showHide" onclick="showHideSubj('CSCI');">Show Details</span>
+</h3>
+
+<div id="CSCI_details" style="display:none;width:650px;margin-left:15px" class="subjDetail">
+    
+    
+    4-192 EE/CSci Building, 200 Union Street SE, East Bank Campus, Minneapolis, MN 55455 <br/>
+    
+    
+    612/625-4002 <br/>
+    
+    
+    <a href="http://www.cs.umn.edu">http://www.cs.umn.edu
+    </a> <br/>
+    
+    
+    College of Science and Engineering
+    
+    <p/>
+    
+</div>
+<hr/>
+
+
+<div class="whiteCourseBlock">
+
+
+<!-- *************************************** COURSE HEADER INFO ******************************************* -->
+
+
+<!--<tr align="left" valign="top" class="white">-->
+<h3 class="courseTitle"><a name="1"></a>CSCI&nbsp;1902
+    &nbsp;Structure of Computer Programming II
+</h3>
+
+
+<div class="courseInfoLinks">
+    
+    
+
+    <a href="#CSCI1902" onClick="MM_openBrWindow('viewCourseGuideTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=CSCI|Computer Science#CSCI1902','courseguide','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Course Guide</a> | <a href="#CSCI1902" onClick="MM_openBrWindow('https://www.bookstores.umn.edu/buybooks.cgi?deptlookup=1&amp;search=CSCI1902&amp;term=1129','bookstore','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Bookstore</a> | <a href="#CSCI1902" onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=CSCI#CSCI1902','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Section Status</a> | <a href="#CSCI1902" onClick="MM_openBrWindow('viewClassScheduleTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=CSCI#CSCI1902','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">Class Schedule</a>
+</div>
+
+
+
+<p> (prereq 1901 or instr consent)</p>
+
+
+<!-- *************************************** END COURSE HEADER INFO ******************************************* -->
+
+
+<table class="sectionTable">
+
+
+
+<tr>
+
+<td class="addNow">
+    
+    &nbsp;
+    </td>
+<td class="classNumber">
+</td>
+<td class="description">*001
+    
+    LEC
+    
+    
+    ,&nbsp;02:30 P.M. - 03:20 P.M.
+    
+    
+    
+    ,&nbsp;M,W,F
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1"
+                   onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/KHKH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">KHKH
+        
+        &nbsp;3-210
+        
+        
+        </a>
+    
+    
+    
+    ,&nbsp;TCEASTBANK
+    
+    
+    
+    ,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=wetz0025">wetzel,baylor</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    </td>
+</tr>
+
+
+
+<tr>
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=11239&addNowSubject=CSCI&addNowCatNbr=1902&addNowSection=002&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DCSCI%7CComputer+Science+-+CSCI%26searchCatalogNumber%3D1902%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dfalse%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26searchLocations%3DTCEASTBANK%2CEast+Bank%26searchLocations%3DTCWESTBANK%2CWest+Bank%26searchLocations%3DSTPAUL%2CSt.+Paul%26campus%3DUMNTC%26search%3DSearch';return  false;">
+        <img src="images/addNow.gif" alt="Click to register for this class"
+             border="0" align="left"/></a>
+    </td>
+<td class="classNumber">11239
+</td>
+<td class="description">-002
+    
+    DIS
+    
+    
+    ,&nbsp;12:20 P.M. - 01:10 P.M.
+    
+    
+    
+    ,&nbsp;Tu
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1"
+                   onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/KHKH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">KHKH
+        
+        &nbsp;1-260
+        
+        
+        </a>
+    
+    
+    
+    ,&nbsp;TCEASTBANK
+    
+    
+    
+    ,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=wetz0025">wetzel,baylor</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ,&nbsp;4 credits
+    
+    
+
+    
+
+    
+    
+    
+    ,&nbsp;<a href="#CSCI1902"
+              onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=CSCI&amp;showDetail=Y#CSCI1902','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+        <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+                  height="25"/></a>
+    &nbsp;10 seat(s)
+reserved for fr or soph or jr&nbsp;
+    
+
+    
+    
+    <br/><span class="closed"><img src="images/x.gif" alt="Closed"/>&nbsp;&nbsp;Closed</span>
+    
+    <img src="images/red_waitlistClosed.gif" alt="Waitlist is closed for this class"/>
+    
+    </td>
+</tr>
+
+
+
+<tr>
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=11240&addNowSubject=CSCI&addNowCatNbr=1902&addNowSection=003&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DCSCI%7CComputer+Science+-+CSCI%26searchCatalogNumber%3D1902%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dfalse%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26searchLocations%3DTCEASTBANK%2CEast+Bank%26searchLocations%3DTCWESTBANK%2CWest+Bank%26searchLocations%3DSTPAUL%2CSt.+Paul%26campus%3DUMNTC%26search%3DSearch';return  false;">
+        <img src="images/addNow.gif" alt="Click to register for this class"
+             border="0" align="left"/></a>
+    </td>
+<td class="classNumber">11240
+</td>
+<td class="description">-003
+    
+    DIS
+    
+    
+    ,&nbsp;01:25 P.M. - 02:15 P.M.
+    
+    
+    
+    ,&nbsp;Tu
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1"
+                   onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/KHKH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">KHKH
+        
+        &nbsp;1-260
+        
+        
+        </a>
+    
+    
+    
+    ,&nbsp;TCEASTBANK
+    
+    
+    
+    ,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=wetz0025">wetzel,baylor</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ,&nbsp;4 credits
+    
+    
+
+    
+
+    
+    
+    
+    ,&nbsp;<a href="#CSCI1902"
+              onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=CSCI&amp;showDetail=Y#CSCI1902','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+        <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+                  height="25"/></a>
+    &nbsp;10 seat(s)
+reserved for fr or soph or jr&nbsp;
+    
+
+    
+    
+    <br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px"
+                                  alt="Seats Open"/>&nbsp;&nbsp;4&nbsp;of&nbsp;36&nbsp;seats&nbsp;open</span>
+    
+    <img src="images/red_waitlistClosed.gif" alt="Waitlist is closed for this class"/>
+    
+    </td>
+</tr>
+
+
+
+<tr>
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=11241&addNowSubject=CSCI&addNowCatNbr=1902&addNowSection=004&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DCSCI%7CComputer+Science+-+CSCI%26searchCatalogNumber%3D1902%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dfalse%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26searchLocations%3DTCEASTBANK%2CEast+Bank%26searchLocations%3DTCWESTBANK%2CWest+Bank%26searchLocations%3DSTPAUL%2CSt.+Paul%26campus%3DUMNTC%26search%3DSearch';return  false;">
+        <img src="images/addNow.gif" alt="Click to register for this class"
+             border="0" align="left"/></a>
+    </td>
+<td class="classNumber">11241
+</td>
+<td class="description">-004
+    
+    DIS
+    
+    
+    ,&nbsp;02:30 P.M. - 03:20 P.M.
+    
+    
+    
+    ,&nbsp;Tu
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1"
+                   onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/KHKH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">KHKH
+        
+        &nbsp;1-260
+        
+        
+        </a>
+    
+    
+    
+    ,&nbsp;TCEASTBANK
+    
+    
+    
+    ,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=wetz0025">wetzel,baylor</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ,&nbsp;4 credits
+    
+    
+
+    
+
+    
+    
+    
+    ,&nbsp;<a href="#CSCI1902"
+              onClick="MM_openBrWindow('viewSectionStatusTermAndSubject.do?campus=UMNTC&amp;searchTerm=1129&amp;searchSubject=CSCI&amp;showDetail=Y#CSCI1902','section','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">
+        <br/><img src="images/reservedseating.gif" alt="Show reserved seating details in a separate window" width="75"
+                  height="25"/></a>
+    &nbsp;10 seat(s)
+reserved for fr or soph or jr&nbsp;
+    
+
+    
+    
+    <br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px"
+                                  alt="Seats Open"/>&nbsp;&nbsp;7&nbsp;of&nbsp;36&nbsp;seats&nbsp;open</span>
+    
+    <img src="images/red_waitlistClosed.gif" alt="Waitlist is closed for this class"/>
+    
+    </td>
+</tr>
+
+
+
+<tr>
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=34825&addNowSubject=CSCI&addNowCatNbr=1902&addNowSection=005&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DCSCI%7CComputer+Science+-+CSCI%26searchCatalogNumber%3D1902%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dfalse%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26searchLocations%3DTCEASTBANK%2CEast+Bank%26searchLocations%3DTCWESTBANK%2CWest+Bank%26searchLocations%3DSTPAUL%2CSt.+Paul%26campus%3DUMNTC%26search%3DSearch';return  false;">
+        <img src="images/addNow.gif" alt="Click to register for this class"
+             border="0" align="left"/></a>
+    </td>
+<td class="classNumber">34825
+</td>
+<td class="description">-005
+    
+    DIS
+    
+    
+    ,&nbsp;11:15 A.M. - 12:05 P.M.
+    
+    
+    
+    ,&nbsp;Tu
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1"
+                   onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/KHKH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">KHKH
+        
+        &nbsp;1-260
+        
+        
+        </a>
+    
+    
+    
+    ,&nbsp;TCEASTBANK
+    
+    
+    
+    ,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=wetz0025">wetzel,baylor</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ,&nbsp;4 credits
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    <br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px"
+                                  alt="Seats Open"/>&nbsp;&nbsp;4&nbsp;of&nbsp;36&nbsp;seats&nbsp;open</span>
+    
+    <img src="images/red_waitlistClosed.gif" alt="Waitlist is closed for this class"/>
+    
+    </td>
+</tr>
+
+
+
+<tr>
+
+<td class="addNow">
+    
+    &nbsp;
+    </td>
+<td class="classNumber">
+</td>
+<td class="description">*010
+    
+    LEC
+    
+    
+    ,&nbsp;06:30 P.M. - 09:00 P.M.
+    
+    
+    
+    ,&nbsp;Th
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1"
+                   onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/KHKH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">KHKH
+        
+        &nbsp;3-115
+        
+        
+        </a>
+    
+    
+    
+    ,&nbsp;TCEASTBANK
+    
+    
+    
+    ,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=wetz0025">wetzel,baylor</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    </td>
+</tr>
+
+
+
+<tr>
+
+<td class="addNow">
+    
+    
+    <a href="#" onMouseover="window.status='Click to register for this class'; return true"
+       onClick="window.location='https://onestop2.umn.edu/registration/addClassStep2.do?campus=UMNTC&term=1129&addNow=Y&addNowClassNbr=23957&addNowSubject=CSCI&addNowCatNbr=1902&addNowSection=011&addNowTermCode=1129&addNowPreviousApp=Class+Search&addNowPreviousURL=http%3A%2F%2Fonestop2.umn.edu%2Fcourseinfo%2FviewSearchResults.do%3Fcampus%3DUMNTC%26swapNow%3DN%26searchTerm%3DUMNTC%2C1129%2CFall%2C2012%26searchSubjects%3DCSCI%7CComputer+Science+-+CSCI%26searchCatalogNumber%3D1902%26searchClassroom%3Dtrue%26searchPrimarilyOnline%3Dtrue%26searchOnline%3Dtrue%26searchOpenSections%3Dfalse%26searchLowerStartTime%3D00%3A00%2C12%3A00%26searchUpperEndTime%3D23%3A59%2C11%3A59%26searchMon%3Dtrue%26searchTue%3Dtrue%26searchWed%3Dtrue%26searchThu%3Dtrue%26searchFri%3Dtrue%26searchSat%3Dtrue%26searchSun%3Dtrue%26searchLowerLevelLimit%3D0%2C0xxx%26searchUpperLevelLimit%3D9999%2C9xxx%26searchLowerCreditLimit%3D0%26searchUpperCreditLimit%3D9999%26searchInstructorName%3D%26searchCourseTitle%3D%26searchSessionCodes%3DALL%2CALL%26searchLocations%3DTCEASTBANK%2CEast+Bank%26searchLocations%3DTCWESTBANK%2CWest+Bank%26searchLocations%3DSTPAUL%2CSt.+Paul%26campus%3DUMNTC%26search%3DSearch';return  false;">
+        <img src="images/addNow.gif" alt="Click to register for this class"
+             border="0" align="left"/></a>
+    </td>
+<td class="classNumber">23957
+</td>
+<td class="description">-011
+    
+    DIS
+    
+    
+    ,&nbsp;05:45 P.M. - 06:35 P.M.
+    
+    
+    
+    ,&nbsp;Tu
+    
+    
+    (09/04/2012 - 12/12/2012)
+    
+    
+    
+    ,&nbsp;<br/><a href="#1"
+                   onClick="MM_openBrWindow('http://onestop.umn.edu/Maps/KHKH/','location','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')">KHKH
+        
+        &nbsp;1-260
+        
+        
+        </a>
+    
+    
+    
+    ,&nbsp;TCEASTBANK
+    
+    
+    
+    ,&nbsp;<a href="http://www.umn.edu/lookup?SET_INSTITUTION=UMNTC&UID=wetz0025">wetzel,baylor</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ,&nbsp;4 credits
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    <br/><span class="green"><img src="images/checkmark.gif" style="margin-top: 5px"
+                                  alt="Seats Open"/>&nbsp;&nbsp;3&nbsp;of&nbsp;36&nbsp;seats&nbsp;open</span>
+    
+    <img src="images/red_waitlistClosed.gif" alt="Waitlist is closed for this class"/>
+    
+    </td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+<div class="searchButtons borderTop">
+    <input type="button" name="return" value="Return to Search Criteria"
+           onClick="window.location='enterSearchCriteria.do?campus=UMNTC&term=1129'"/>
+    <input type="button" name="webregistration" value="Open Web Registration"
+           onClick="window.location='https://www.umn.edu/login?autocontinue=1&desturl=https%3A%2F%2Fonestop2.umn.edu%2Fregistration%2FinitializeCurrentEnrollment.do%3Finstitution%3DUMNTC%26resetInstitution%3DY'"/>
+    <input type="button" name="worksheet" value="Registration Worksheet"
+           onClick="window.open('registrationworksheet.jsp','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')"/>
+
+</div>
+
+</div>
+</form>
+
+
+
+	
+
+<!-- ********************************************* START OF INSTITUTIONAL FOOTER ********************************* -->
+
+
+
+
+<div id="unit_footer">
+	<div id="unit_footer_inner">
+	
+    	<p>&nbsp;</p>
+    	 <ul>
+
+      <li><a href="http://onestop.umn.edu" target="_blank"><img src="header-footer/img/onestopfooterimg.gif" alt="" width="113" height="32"  style="border:1px solid #333"/></a></li>
+      <li style="position:relative; top:-12px"><a href="http://www.onestop.umn.edu/contact_us/index.html" target="_blank">Contact Us</a></li>
+
+    </ul>
+	
+    </div>
+
+</div>
+
+
+  
+  
+  <!-- * FOOTER * -->
+  
+<div id="footer">
+	<div id="footer_inner">
+		
+    
+    
+    <div class="footerLinks">
+       <p>Twin Cities Campus:</p>
+        <ul>
+        	
+			
+            
+            
+             	<li><a href="http://www1.umn.edu/pts/">Parking &amp; Transportation</a></li>
+            	<li><a href="http://www.umn.edu/twincities/maps/index.html">Maps &amp; Directions</a></li>
+            	<li><a href="http://www.directory.umn.edu/">Directories</a></li>
+            	<li><a href="http://www.umn.edu/twincities/contact/">Contact U of M</a></li>
+            
+            
+             
+             
+             
+            
+            
+            <li><a href="http://www.privacy.umn.edu">Privacy</a></li>
+        </ul>
+	</div>
+        
+        <p class="copyright">&copy; 2002 Regents of the University of Minnesota. All rights reserved.<br />
+    The University of Minnesota is an equal opportunity educator and employer<br />
+    Information current as of October 03, 2012</p>
+    
+        
+	</div><!-- end footer_inner -->
+</div><!-- end footer -->
+<!-- ***************************************** END OF INSTITUIONAL FOOTER **************************************** -->
+
+
+</body>
+</html>

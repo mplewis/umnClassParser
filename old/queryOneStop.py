@@ -104,7 +104,11 @@ class CourseParser(HTMLParser):
 		if self.insideCourseTitle:
 			self.courseInfo.append(data)
 		if self.insideSectionNumber:
-			self.sectionInfo.append(int(data))
+			#FIXME THIS IS SUPER HACKY AND SHOULD NEVER BE TRUSTED AND CAUSES BUGS
+			try:
+				self.sectionInfo.append(int(data))
+			except ValueError:
+				self.sectionInfo.append(-1)
 		if self.insideSeatsAvailable:
 			self.seatsData.append(data)
 

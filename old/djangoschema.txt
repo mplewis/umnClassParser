@@ -1,0 +1,34 @@
+Django schema for OneStop app:
+
+App:
+	Provides authentication for users
+		Users use UMN email (to verify studentship) and their choice of password
+		Users optionally provide their mobile phone numbers for notification texts
+	Keeps a list of closed sections a user wishes to track
+		Maximum: 10 sections per user?
+	Queries OneStop at intervals to check whether closed sections have become open
+		Will also query OneStop when users manually request a refresh of data
+		Use the Python queryOneStop script to check for sections opening
+			Most efficient way to grab data:
+				by category (get all CSCI, BIOL, at once)
+					less requests to server
+					maybe less overhead for popular categories?
+				or individually by course (search for CSCI 1902, BIOL 1001, etc.)
+					more requests to server
+					possibly less overhead, esp. if some categories have only a few sections tracked?
+		If a closed section opens up, send a text (or email?) to user
+			Will users want emails or just texts?
+			Use Twilio as the SMS API
+
+Users:
+	Register for site using X.500 email address to verify UMN student status
+		Confirm valid email address using link in email
+	Log into site using X.500 email, own password
+	Add sections to Tracked Sections list by category, course num, section num
+		Example: BIOL 1001, sec. 10455
+	View the registration status of their tracked sections using the site
+		Users have a Refresh button to manually update their tracked sections from OneStop
+	Receive texts from site when a closed section becomes available
+		Option to toggle text messaging individually by course section
+		Site defaults to opt-out of texting users to avoid spam
+		Does the site need email notification support too? Will users use that?

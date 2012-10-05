@@ -1,0 +1,348 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Class Search - Search Results</title>
+
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+	
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	<link rel="stylesheet" href="styles/pageTitles.css" type="text/css" />
+	
+	
+	<script type="text/javascript" src="script/scripts.js"></script>
+
+    <style>
+        body {
+            font: normal .85em Arial, Helvetica, sans-serif;
+        }
+
+        .subjDetail {
+            width: 700px;
+            background-color: #eeeeee;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .showHide {
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: .85em;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function showHideSubj(div) {
+            var showHide = document.getElementById(div + "_showHide");
+            var details = document.getElementById(div + "_details");
+
+            if (showHide.innerHTML == "Show Details") {
+                showHide.innerHTML = "Hide Details";
+                details.style.display = "block";
+            } else {
+                showHide.innerHTML = "Show Details";
+                details.style.display = "none";
+            }
+        }
+    </script>
+    <link type="text/css" rel="stylesheet" href="header-footer/headerFooter2.css"/>
+    <script type="text/javascript" src="header-footer/searchfield.js"></script>
+    
+</head>
+
+<body>
+
+
+<div id="header2">
+
+
+
+
+
+      <!-- BEGNIN CAMPUS LINKS -->
+  <div id="campus_links">
+  
+  
+  
+  <div id="campusLinksToHome">
+        <p>Campuses: </p>
+        <ul>
+          <li><a href="http://www.umn.edu" class='here'>Twin Cities</a></li>
+          <li><a href="http://www.crk.umn.edu" >Crookston</a></li>
+          <li><a href="http://www.d.umn.edu" >Duluth</a></li>
+          <li><a href="http://www.morris.umn.edu" >Morris</a></li>
+          <li><a href="http://www.r.umn.edu" >Rochester</a></li>
+          <li><a href="http://www.umn.edu/campuses.php">Other Locations</a></li>
+        </ul>
+        </div>
+  </div>
+      <!-- END CAMPUS LINKS -->
+      
+      
+      <!-- * BEGIN UofM HEADER (MAROON BAR)* -->
+<div id="headerUofM">
+        
+        <div id="logo_UMNTC">
+        	<a href="http://www.umn.edu">Go to the U of M Twin Cities home page</a>
+        </div>
+        
+        
+        <!--BEGIN search div-->
+        <div id="search_area">
+          <div id="search_nav">
+          
+          <a href="http://onestop.umn.edu" id="btn_onestop"><span>OneStop</span></a> 
+          
+          <a href="https://www.myu.umn.edu/" id="btn_myu_myU"><span>myU</span></a>
+          
+          </div>
+         
+
+         
+          <div class="search"> 
+               <form action="https://google.umn.edu/search" method="get" name="gsearch" id="gsearch" title="Search U of M Web sites" >
+               
+            		
+
+                    <input type="hidden" name="client" value="searchumn" />
+                    <input type="hidden" name="proxystylesheet" value="searchumn" />
+                    <input type="hidden" name="output" value="xml_no_dtd" />
+
+               
+               
+               
+               <label for="search_field">Search U of M Web sites</label>
+
+               <input type="text" id="search_field" name="q" value="Search U of M Web sites"  title="Search text"  />   
+                 <input class="search_btn" id="search_btn" type="image" src="header-footer/img/search_button.gif" alt="Submit Search" value="Search" />
+               
+               
+               </form> 
+          </div> 
+         
+         
+         
+          
+        </div><!-- end "search" area -->
+  </div><!-- end  Uof M header --> 
+</div><!-- end of header -->
+
+<!-- **************************** START OF ONESTOP BANNER ************************************* -->
+<div id="oneStopBanner2">
+	<div id="oneStopBanner2_inner"><h1>Class Search</h1>
+	<span class="appSubName">- Search Results</span> 
+    </div>
+    </div>
+<!-- ******************************* END OF ONESTOP BANNER ***************************** -->
+
+
+
+
+
+
+<!-- ****************************** START RETURN AND COURSE INFO BUTTONS **************************** -->
+<div id="courseInfoPageLink"><a href="http://onestop.umn.edu/onestop/registration.html">Course Information Page
+</a></div>
+<div id="returnButton">
+    <a href="enterSearchCriteria.do?campus=UMNTC&term=">&lt; Back </a>
+
+</div>
+<!-- ****************************** END RETURN AND COURSE INFO BUTTONS **************************** -->
+
+
+<form name="searchResultsForm" action="viewSearchResults.do?campus=UMNTC" method="GET">
+
+<div class="courseSearchMainBlock">
+
+
+<h1 class="searchResultsTitle">Search Results</h1>
+
+<div class="searchButtons borderBottom"><input type="button" name="return" value="Return to Search Criteria"
+                                               onClick="window.location='enterSearchCriteria.do?campus=UMNTC&term='"/>
+    <input type="button" name="webregistration" value="Open Web Registration"
+           onClick="window.location='https://www.umn.edu/login?autocontinue=1&desturl=https%3A%2F%2Fonestop2.umn.edu%2Fregistration%2FinitializeCurrentEnrollment.do%3Finstitution%3DUMNTC%26resetInstitution%3DY'"/>
+    <input type="button" name="worksheet" value="Registration Worksheet"
+           onClick="window.open('registrationworksheet.jsp','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')"/>
+</div>
+
+<div><h2 class="searchCriteraLabel">Search Criteria -</h2>
+<table class="searchCriteria">
+<tr>
+
+    <td class="tableLabel">Term:</td>
+    <td> 
+    </td>
+
+</tr>
+<tr>
+
+    <td class="tableLabel">Subject:</td>
+    <td>
+        
+        All Subjects
+        
+    </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+    <td class="tableLabel">Sections:</td>
+    <td>All
+        sections
+    </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+</div>
+
+
+<h2 class="searchResults borderBoth">
+    0 Results Found
+    
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="searchButtons borderTop">
+    <input type="button" name="return" value="Return to Search Criteria"
+           onClick="window.location='enterSearchCriteria.do?campus=UMNTC&term='"/>
+    <input type="button" name="webregistration" value="Open Web Registration"
+           onClick="window.location='https://www.umn.edu/login?autocontinue=1&desturl=https%3A%2F%2Fonestop2.umn.edu%2Fregistration%2FinitializeCurrentEnrollment.do%3Finstitution%3DUMNTC%26resetInstitution%3DY'"/>
+    <input type="button" name="worksheet" value="Registration Worksheet"
+           onClick="window.open('registrationworksheet.jsp','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=580')"/>
+
+</div>
+
+</div>
+</form>
+
+
+
+	
+
+<!-- ********************************************* START OF INSTITUTIONAL FOOTER ********************************* -->
+
+
+
+
+<div id="unit_footer">
+	<div id="unit_footer_inner">
+	
+    	<p>&nbsp;</p>
+    	 <ul>
+
+      <li><a href="http://onestop.umn.edu" target="_blank"><img src="header-footer/img/onestopfooterimg.gif" alt="" width="113" height="32"  style="border:1px solid #333"/></a></li>
+      <li style="position:relative; top:-12px"><a href="http://www.onestop.umn.edu/contact_us/index.html" target="_blank">Contact Us</a></li>
+
+    </ul>
+	
+    </div>
+
+</div>
+
+
+  
+  
+  <!-- * FOOTER * -->
+  
+<div id="footer">
+	<div id="footer_inner">
+		
+    
+    
+    <div class="footerLinks">
+       <p>Twin Cities Campus:</p>
+        <ul>
+        	
+			
+            
+            
+             	<li><a href="http://www1.umn.edu/pts/">Parking &amp; Transportation</a></li>
+            	<li><a href="http://www.umn.edu/twincities/maps/index.html">Maps &amp; Directions</a></li>
+            	<li><a href="http://www.directory.umn.edu/">Directories</a></li>
+            	<li><a href="http://www.umn.edu/twincities/contact/">Contact U of M</a></li>
+            
+            
+             
+             
+             
+            
+            
+            <li><a href="http://www.privacy.umn.edu">Privacy</a></li>
+        </ul>
+	</div>
+        
+        <p class="copyright">&copy; 2002 Regents of the University of Minnesota. All rights reserved.<br />
+    The University of Minnesota is an equal opportunity educator and employer<br />
+    Information current as of October 03, 2012</p>
+    
+        
+	</div><!-- end footer_inner -->
+</div><!-- end footer -->
+<!-- ***************************************** END OF INSTITUIONAL FOOTER **************************************** -->
+
+
+</body>
+</html>
